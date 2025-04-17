@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./stylesheets/layout.css">
+  <link rel="stylesheet" href="stylesheets/internship.css">
+  <title>Internship | IEAC</title>
+</head>
+<body class="d-flex flex-column vh-100">
+    
+    <div id="header"></div>
+
+    <main>
+        <!-- Hero Banner Section -->
+        <section class="banner">
+            <div class="page1">
+                <div class="container-inner">
+                    <h1>Intership-IEAC(IITG)</h1>
+                    <h2>Hands-on Experience and Practical Application for Future Leaders</h2>
+                </div>
+            </div>
+        </section> 
+    
+        <!-- Internship Details Section -->
+        <section class="internship-details">
+            <div class="container">
+                <h2>Why Choose Our Internships?</h2>
+                <p><b>The Industrial Energy Assessment Cell (IEAC)</b> offers a range of internships that provide invaluable benefits for students seeking real-world experience in energy efficiency and sustainability. Our internships are designed to give you hands-on experience through impactful projects, allowing you to apply your theoretical knowledge while focusing on skill development and personal growth.</p>
+                
+                <div class="internship-type">
+                    <h3>Academic Internships</h3>
+                    <p>These internships are typically part of formal academic programs. They may involve undergraduate or postgraduate projects and can last for a semester or a year. Shared accommodation in the hostel may be provided, and a stipend may be offered in exceptional cases.</p>
+                </div>
+    
+                <div class="internship-type">
+                    <h3>Experiential Internships</h3>
+                    <p>These internships are based on individual interests and are not required as part of academic programs. Shared accommodation in the hostel may be available. A stipend may be offered in exceptional cases. Duration of internship can be mutually decided.</p>
+                </div>
+                <p>Both options offer you the opportunity to work on impactful projects while networking with experts and professionals, making your experience at IEAC a valuable step in your career development.</p>
+                <a href="https://forms.gle/juLQC25vnchidq6j8" class="apply-button">Click here to express your interest in internships</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- <div id="footer"></div> -->
+
+    <script src='./javascripts/home.js'></script>
+    <script src="./javascripts/layout.js"></script>
+    <script>
+        fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+        runLayoutScripts();
+    });
+
+// // Load footer
+// fetch('footer.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('footer').innerHTML = data;
+//     });
+  
+function runLayoutScripts() {
+  const menuBtn = document.querySelector('.menu-icon');
+  const menuPanel = document.querySelector('.mobile-nav-menu');
+
+  menuBtn.addEventListener('click', function(){
+  menuPanel.classList.toggle('show-menu');
+  overlay.classList.toggle('show');
+  })
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./stylesheets/layout.css">
+  <link rel="stylesheet" href="./stylesheets/home.css">
+  <title>IEAC</title>
+</head>
+<body class="d-flex flex-column vh-100">
+    
+    <div id="header"></div>
+
+    <main style="position: relative;">
+      <!-- particles.js container -->
+      <section class="banner">
+        <div id="page1">
+          <h1>The Industrial Energy Assessment Cell (IEAC)</h1>
+          <h2>Established at IIT Guwahati</h2>
+        </div>
+      </section> 
+      <section class="about">
+        <div class="about-left">
+          <h2>Welcome to IEAC</h2>
+          <p>
+            <b>The Industrial Energy Assessment Cell (IEAC)</b> was established in 2023 at IIT Guwahati is dedicated to enhancing energy efficiency across industries and organizations that consume energy. This initiative aims to lower energy costs and improve profitability by conducting both walk-through assessments and comprehensive energy analyses. <br><br>
+  
+            IEAC conducts various energy assessment studies to identify and recommend effective energy conservation measures that save costs and significantly reduce emissions, contributing to the broader goal of decarbonizing energy consumption across various sectors.
+  <br>
+  <br>
+  In addition to these technical assessments, the IEAC enables technological interventions that enhance energy efficiency. A key component of this mission is creating awareness and educating stakeholders about the importance of energy conservation practices. By fostering a culture of sustainability and innovation, the cell aspires to empower industries and organizations to adopt cleaner, more efficient technologies, ultimately leading to a greener and more prosperous future for the nation.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div id="footer"></div> -->
+    <!-- <section class="service-cards">
+      <div class="slider-heading">
+      </div>
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card-vector">
+            <img src="./images/home/assessment.png" alt="Assessment" />
+            <h4>50</h4>
+          </div>
+          <div class="card-text">
+            Assessment
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-vector">
+            <img src="./images/home/recommend.png" alt="Recommendations" />
+            <h4>2650</h4>
+          </div>
+          <div class="card-text">
+            Recommendations
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-vector">
+            <img src="./images/home/sectors.png" alt="Sectors" />
+            <h4>30</h4>
+          </div>
+          <div class="card-text">
+            Sectors
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-vector">
+            <img src="./images/home/energy.png" alt="Energy Savings" />
+            <h4>29,000 Metric ToE</h4>
+          </div>
+          <div class="card-text">
+            Annual Energy Savings Recommended
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-vector">
+            <img src="./images/home/energy_cost.png" alt="Cost Savings" />
+            <h4>₹180 Cr</h4>
+          </div>
+          <div class="card-text">
+            Annual Cost Savings Recommended
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-vector">
+            <img src="./images/home/carbon.png" alt="Carbon Savings" />
+            <h4>1,90,000 MT</h4>
+          </div>
+          <div class="card-text">
+            Annual Carbon Savings Recommended
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-vector">
+            <img src="./images/home/energy_saving.png" alt="Energy Savings" />
+            <h4>12,450 Metric ToE</h4>
+          </div>
+          <div class="card-text">
+            Annual Energy Savings Achieved
+          </div>
+        </div> -->
+        <!-- <div class="card">
+          <div class="card-vector">
+            <img src="./images/home/cost_saving.png" alt="Cost Savings" />
+            <h4>₹64 Cr</h4>
+          </div>
+          <div class="card-text">
+            Annual Cost Savings Achieved
+          </div>
+        </div> -->
+        <!-- <div class="card">
+          <div class="card-vector">
+            <img src="./images/home/carbon_saving.png" alt="Carbon Savings" />
+            <h4>80,000 MT</h4>
+          </div>
+          <div class="card-text">
+            Annual Carbon Savings Achieved
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+    
+    <script>
+            fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+            runLayoutScripts();
+        });
+
+    // // Load footer
+    // fetch('footer.html')
+    //     .then(response => response.text())
+    //     .then(data => {
+    //         document.getElementById('footer').innerHTML = data;
+    //     });
+      
+    function runLayoutScripts() {
+      const menuBtn = document.querySelector('.menu-icon');
+      const menuPanel = document.querySelector('.mobile-nav-menu');
+
+      menuBtn.addEventListener('click', function(){
+      menuPanel.classList.toggle('show-menu');
+      overlay.classList.toggle('show');
+      })
+    }
+    </script>
+  <script src="./javascripts/layout.js"></script>
+  <script src='./javascripts/home.js'></script>
+</body>
+</html>

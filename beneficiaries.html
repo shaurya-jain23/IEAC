@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./stylesheets/layout.css">
+  <link rel="stylesheet" href="./stylesheets/beneficiaries.css">
+  <title>Beneficiaries | IEAC</title>
+</head>
+<body class="d-flex flex-column vh-100">
+    
+    <div id="header"></div>
+    <main>
+        <section class="banner">
+            <div class="page1">
+                <div class="container-inner">
+                    <h1>Beneficiaries - IEAC (IIT Guwahati)</h1>
+                    <p>Discover how various stakeholders benefit from our project and its commitment to energy efficiency and sustainability.</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="beneficiaries-section">
+            <div class="container">
+                <div class="beneficiary-card">
+                    <h2>Manufacturing and Industrial Facilities</h2>
+                    <p>By conducting comprehensive energy assessments, we help industries identify areas for energy savings, optimize processes, and reduce operational costs.</p>
+                </div>
+                <div class="beneficiary-card">
+                    <h2>Energy Managers and Sustainability Officers</h2>
+                    <p>Our project equips professionals with the tools and insights needed to improve energy efficiency and meet sustainability targets, fostering a culture of responsible energy use.</p>
+                </div>
+                <div class="beneficiary-card">
+                    <h2>Small and Medium Enterprises (SMEs)</h2>
+                    <p>SMEs can benefit from tailored energy solutions that reduce energy consumption and costs, making energy-efficient practices more accessible and affordable.</p>
+                </div>
+                <div class="beneficiary-card">
+                    <h2>Government and Regulatory Agencies</h2>
+                    <p>The project supports national and regional energy goals by promoting compliance with energy regulations and standards, while helping industries reduce their carbon footprint.</p>
+                </div>
+                <div class="beneficiary-card">
+                    <h2>Environmental Organizations</h2>
+                    <p>By lowering industrial energy consumption and greenhouse gas emissions, the project contributes to environmental preservation and sustainability.</p>
+                </div>
+                <div class="beneficiary-card">
+                    <h2>Communities and Society</h2>
+                    <p>Reducing industrial energy use leads to a more sustainable future, ensuring that energy resources are used efficiently, benefiting the economy and society as a whole.</p>
+                </div>
+            </div>
+        </section> -->
+        <section class="clients-section">
+            <div class="container">
+                <h2>Our Key Clients</h2>
+                <p>Diverse organizations across various sectors have benefited from our industrial energy assessments. These organizations demonstrate a strong commitment to improving energy efficiency and sustainability. Some of these organizations have audited multiple plants across the country in light of the benefits harnessed.
+                </p>
+                <div class="clients-logos">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+
+    <!-- <div id="footer"></div> -->
+
+    <script src='./javascripts/beneficiaries.js'></script>
+    <script src="./javascripts/layout.js"></script>
+    <script>
+        fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+        runLayoutScripts();
+    });
+
+// Load footer
+// fetch('footer.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('footer').innerHTML = data;
+//     });
+  
+function runLayoutScripts() {
+  const menuBtn = document.querySelector('.menu-icon');
+  const menuPanel = document.querySelector('.mobile-nav-menu');
+
+  menuBtn.addEventListener('click', function(){
+  menuPanel.classList.toggle('show-menu');
+  overlay.classList.toggle('show');
+  })
+}
+</script>
+
+</body>
+</html>
+

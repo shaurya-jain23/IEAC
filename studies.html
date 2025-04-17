@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./stylesheets/layout.css">
+  <link rel="stylesheet" href="stylesheets/studies.css">
+  <title>STUDIES | IEAC</title>
+</head>
+<body class="d-flex flex-column vh-100">
+    
+    <div id="header"></div>
+
+    <main>
+        <section class="banner">
+            <div class="page1">
+                <div class="container-inner">
+                    <h1>Studies and Assessments</h1>
+                    <!-- <p>We conduct detailed energy assessments to help industries improve energy efficiency and optimize performance.</p> -->
+                </div>
+            </div>
+        </section> 
+        <section class="studies-grid">
+            <!-- Energy Consumption Review -->
+            <div class="card">
+                <img src="images/studies/energy.png" alt="Energy Consumption Review">
+                <h2>Energy Consumption Assessment</h2>
+                <!-- <p>Analyze total energy consumption and identify opportunities for improving efficiency and reducing waste.</p> -->
+            </div>
+    
+            <!-- Power Quality Analysis -->
+            <div class="card">
+                <img src="images/studies/power.png" alt="Power Quality Analysis">
+                <h2>Power Quality Assessment</h2>
+                <!-- <p>Assess the stability and reliability of the power supply to mitigate power quality issues.</p> -->
+            </div>
+    
+            <!-- Harmonic Distortion Analysis -->
+            <div class="card">
+                <img src="images/studies/harmonic.png" alt="Harmonic Distortion Analysis">
+                <h2>Harmonic Distortion Evaluation</h2>
+                <!-- <p>Evaluate harmonic distortion in electrical systems and suggest corrective measures to reduce system disruptions.</p> -->
+            </div>
+    
+            <!-- Electrical Power Distribution Review -->
+            <div class="card">
+                <img src="images/studies/electrical.png" alt="Electrical Power Distribution Review">
+                <h2>Electrical Distribution System Review</h2>
+                <!-- <p>Optimize electrical power distribution for enhanced efficiency and reliability in your operations.</p> -->
+            </div>
+    
+            <!-- Motor & Pump Performance Analysis -->
+            <div class="card">
+                <img src="images/studies/motor.png" alt="Motor & Pump Performance Analysis">
+                <h2>Motor & Pump Efficiency Analysis</h2>
+                <!-- <p>Review and improve the performance of motors and pumps to reduce energy consumption.</p> -->
+            </div>
+    
+            <!-- Boiler & Steam Utilization Assessment -->
+            <div class="card">
+                <img src="images/studies/boiler.png" alt="Boiler & Steam Utilization Assessment">
+                <h2>Boiler & Steam Utilization Analysis</h2>
+                <!-- <p>Maximize steam and boiler efficiency to lower operational costs and reduce energy waste.</p> -->
+            </div>
+    
+            <!-- Compressor Performance Analysis -->
+            <div class="card">
+                <img src="images/studies/compressor.png" alt="Compressor Performance Analysis">
+                <h2>Compressor Performance Analysis</h2>
+                <!-- <p>Evaluate the performance of compressors to optimize energy usage and extend equipment life.</p> -->
+            </div>
+    
+            <!-- HVAC System Assessment -->
+            <div class="card">
+                <img src="images/studies/HVAC.png" alt="HVAC System Assessment">
+                <h2>HVAC System Performance Assessment</h2>
+                <!-- <p>Ensure optimal performance of HVAC systems for energy savings and enhanced comfort.</p> -->
+            </div>
+    
+            <!-- Flue Gas Analysis -->
+            <div class="card">
+                <img src="images/studies/gas.png" alt="Flue Gas Analysis">
+                <h2>Flue Gas Composition Analysis</h2>
+                <!-- <p>Assess flue gases for efficient combustion and reduced emissions in industrial processes.</p> -->
+            </div>
+    
+            <!-- Emission Accounting -->
+            <div class="card">
+                <img src="images/studies/co2.png" alt="Emission Accounting">
+                <h2>Emissions Accounting</h2>
+                <!-- <p>Track and quantify emissions to ensure compliance with environmental regulations.</p> -->
+            </div>
+    
+            <!-- Renewable Energy Adoption Assessment -->
+            <div class="card">
+                <img src="images/studies/renewable.png" alt="Renewable Energy Adoption">
+                <h2>Renewable Energy Integration</h2>
+                <!-- <p>Assess the feasibility and benefits of adopting renewable energy technologies in your operations.</p> -->
+            </div>
+    
+            <!-- Energy Efficient Technology Evaluation -->
+            <div class="card">
+                <img src="images/studies/efficient.png" alt="Energy Efficient Technology Evaluation">
+                <h2>Implementation of Energy Efficient Technologies</h2>
+                <!-- <p>Evaluate and recommend energy-efficient technologies to enhance productivity and reduce costs.</p> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- <div id="footer"></div> -->
+
+    <script src='./javascripts/home.js'></script>
+    <script src="./javascripts/layout.js"></script>
+    <script>
+        fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+        runLayoutScripts();
+    });
+
+// // Load footer
+// fetch('footer.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('footer').innerHTML = data;
+//     });
+  
+function runLayoutScripts() {
+  const menuBtn = document.querySelector('.menu-icon');
+  const menuPanel = document.querySelector('.mobile-nav-menu');
+
+  menuBtn.addEventListener('click', function(){
+  menuPanel.classList.toggle('show-menu');
+  overlay.classList.toggle('show');
+  })
+}
+</script>
+
+</body>
+</html>

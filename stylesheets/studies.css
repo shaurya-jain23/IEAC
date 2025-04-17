@@ -1,0 +1,140 @@
+.banner {
+    background-image: url("../images/studies.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    }
+    .page1{
+        background: linear-gradient(180deg,rgba(0, 0, 0, 0.7)  20%, rgba(0, 0, 0, 0.7) 100%);
+        width: 100%;
+        height: 100%;
+        position: relative;
+        clear: both;
+        z-index: 1;
+        /* padding: 80px 0px; */
+    }
+    .container-inner{
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    .container-inner h1{
+        font-size: 60px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: .15em;
+        margin-bottom: 2.5rem;
+        position: relative;
+    }
+    .container-inner h2{
+        line-height: 1em;
+        font-weight: 700;
+        letter-spacing: .25em;
+        text-align: center;
+        text-transform: uppercase;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        
+    }
+
+    .container-inner p{
+        font-family: "montserrat";
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 400;
+        color: #eee;
+        width: 60%;
+    }
+
+
+
+/* Grid Layout for Cards */
+.studies-grid {
+    display: grid;
+    padding: 6vh 6vw
+    ;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    color: #004d99;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .studies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 750px){
+    .banner{
+        height: 70vh;
+    }
+    .container-inner h1{
+        font-size: 35px;
+    }
+    .container-inner h2{
+        
+        letter-spacing: .20em;
+        line-height: 1.1;
+    }
+}
+
+@media(max-width: 500px){
+    .banner{
+        height: 60vh;
+    }
+    .container-inner{
+        padding: 0 10px;
+    }
+    .container-inner p{
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+    .container-inner h1{
+        font-size: 10vw;
+    }
+}

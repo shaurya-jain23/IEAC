@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./stylesheets/layout.css">
+  <link rel="stylesheet" href="./stylesheets/career.css">
+  <title>Career | IEAC</title>
+</head>
+<body class="d-flex flex-column vh-100">
+    
+    <div id="header"></div>
+
+    <main>
+        <section class="banner">
+            <div class="page1">
+                <div class="container-inner">
+                    <h1>Careers-IEAC(IITG)</h1>
+                    <h2>Join us in shaping a sustainable energy future</h2>
+                </div>
+            </div>
+        </section>
+    
+        <section class="section intro">
+            <h2 class="section-title">Why Work With Us?</h2>
+            <ul class="benefits-list">
+                <li><b>Practical Application:</b> Engage in real-world energy assessments to evaluate usage and identify efficiency improvements, gaining valuable hands-on experience.</li>
+    <li><b>State-of-the-Art Tools:</b> Utilize advanced assessment tools and technologies for precise evaluations, ensuring high-quality results.</li>
+    <li><b>Collaboration with Experts:</b> Work alongside faculty from IIT and professionals from various companies and government agencies.</li>
+    <li><b>Networking Opportunities:</b> Build connections with diverse professionals in the green energy sector, opening doors to exciting career opportunities.</li>
+    <li><b>Serene Work Environment:</b> Enjoy a peaceful setting that fosters creativity, focus, and productivity.</li>
+    <li><b>Intellectual Interaction:</b> Collaborate with some of the brightest minds in the country, enhancing your learning and professional growth.</li>
+    <li><b>Impactful Contribution:</b> Participate in meaningful projects that promote energy conservation, environmental sustainability, and industrial efficiency.</li>
+    <li><b>Skill Development:</b> Sharpen your analytical and problem-solving skills through real-world challenges that support your professional development.</li>
+    <li><b>Specialized Knowledge:</b> Gain insights into renewable energy technologies and advanced energy management practices, positioning yourself as a leader in the field.</li>
+            </ul>
+        </section>
+    
+        <section class="section positions">
+            <h2 class="section-title">Positions Available</h2>
+            <p class="job-description">We are looking for highly qualified, motivated individuals to join our team as full-time Energy Assessors.</p>
+            <div class="job-card">
+                <h3 class="job-title">Energy Assessor</h3>
+                <ul class="job-requirements">
+                    <li><strong>Qualifications:</strong> Engineering degrees in Electrical, Mechanical, Instrumentation, Energy, Thermal, and allied areas. Certification of Bureau of Energy Efficiency as energy auditor or energy assessor is desirable.</li>
+                    <li><strong>Key Responsibilities:</strong> Conduct energy assessments, train engineers, review data, manage client relationships, provide feedback, offer recommendations, and ensure follow-up with clients.</li>
+                </ul>
+            </div>
+    
+            <div class="job-card">
+                <h3 class="job-title">Field Engineer</h3>
+                <ul class="job-requirements">
+                    <li><strong>Qualifications:</strong> Engineering degrees in Electrical, Mechanical, Instrumentation, Energy, Thermal, and allied areas.</li>
+                    <li><strong>Key Responsibilities:</strong> Collect and record data during energy assessments, collaborate with Energy Assessors to recommend suitable energy conservation measures (ECMs), and assist in implementing assessment protocols.</li>
+                </ul>
+            </div>
+    
+            <div class="job-card">
+                <h3 class="job-title">Trainee Engineer</h3>
+                <ul class="job-requirements">
+                    <li><strong>Qualifications:</strong> Engineering degrees in Electrical, Mechanical, Instrumentation, Energy, Thermal, and allied areas.</li>
+                    <li><strong>Key Responsibilities:</strong> Help in collecting data, maintain instruments, and assist in various engineering tasks as needed.</li>
+                </ul>
+                <p class="job-link">Click <a  href="./internship.html">here</a> to learn about internship positions.</p>
+                
+            </div>
+        </section>
+    
+        <section class="section apply">
+            <p class="apply-text"><strong>Ready to make an impact?</strong> Click <a class="apply-link" href="https://forms.gle/LhWkWBRK3jNmapZv6" target="_blank">here</a> to submit your resume.</p>
+        </section>
+    </main>
+
+    <!-- <div id="footer"></div> -->
+
+    <script src='./javascripts/home.js'></script>
+    <script src="./javascripts/layout.js"></script>
+    <script>
+        fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+        runLayoutScripts();
+    });
+
+// Load footer
+// fetch('footer.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('footer').innerHTML = data;
+//     });
+  
+function runLayoutScripts() {
+  const menuBtn = document.querySelector('.menu-icon');
+  const menuPanel = document.querySelector('.mobile-nav-menu');
+
+  menuBtn.addEventListener('click', function(){
+  menuPanel.classList.toggle('show-menu');
+  overlay.classList.toggle('show');
+  })
+}
+</script>
+
+</body>
+</html>
