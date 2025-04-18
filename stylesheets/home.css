@@ -73,7 +73,55 @@ font-weight: 400;
 width: 60%;
 }
 
+.marquee{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    /* background-color:#012970; */
+}
+.scroll_strip{
+    font-size: 20px;
+    letter-spacing: .15rem;
+    padding-block: 8px;
+    border-block: 2px solid #012970;
+    overflow: hidden;
+    display: flex;
+    user-select: none;
+    --gap: 10vw;
+    gap: var(--gap);
+}
+.scroll_strip ul{
+    list-style: none;
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
 
+    animation: scroll 20s linear infinite;
+}
+.scroll_strip:hover ul{
+    animation-play-state: paused;
+}
+.scroll_strip:hover a{
+    color: #0459ec;
+}
+
+
+.scroll_strip a{
+    text-decoration: none;
+    color: #000;
+}
+.scroll_strip i{
+    font-size: 15px;
+}
+
+@keyframes scroll{
+    to{
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
 
 /* About section CSS */
 
